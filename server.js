@@ -17,8 +17,8 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  // process.env.MONGODB_URI ||
-  "mongodb://root:root@192.168.99.101/nytreact?authSource=admin"
+  process.env.MONGODB_URI
+  // "mongodb://root:root@ds211724.mlab.com:11724/heroku_8ms452dx"
 , { useNewUrlParser: true });
 // Start the API server
 app.listen(PORT, function() {
